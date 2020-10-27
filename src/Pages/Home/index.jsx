@@ -1,22 +1,31 @@
-import React from 'react';
-
+import React from "react";
+import { FormattedMessage } from 'react-intl';
 // Home.jsx
-const Home = () => { 
+const Home = () => {
+  return (
+    <div>
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title"><FormattedMessage id="home.title" /></h1>
+            <h2 class="subtitle">
+            <FormattedMessage id="home.subtitle" />
+            </h2>
+          </div>
+        </div>
+      </section>
+      <br></br> 
 
-return(
-<section class="hero is-primary">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Bienvenue sur mon PortFolio !
-      </h1>
-      <h2 class="subtitle">
-        Navigue entre les differentes pages pour tout savoir sur mes expériences ou me contacter !
-      </h2>
+      <div className="card">
+        <div className="card-content">
+          <p className="title">
+          <FormattedMessage id="home.content" />
+          </p>
+         
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-)
-}
+  );
+};
 
-export default Home
+export default Home;

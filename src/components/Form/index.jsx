@@ -1,5 +1,6 @@
 import React from "react";
-import "./style.scss"
+import "./style.scss";
+import { FormattedMessage } from 'react-intl';
 
 const Form = () => {
   return (
@@ -7,7 +8,7 @@ const Form = () => {
       <div className="columns is-mobile">
         <div className="column is-three-fifths is-offset-one-fifth">
           <div className="field">
-            <label className="label">Nom</label>
+            <label className="label">  <FormattedMessage id="contact.lastname" /></label>
             <div className="control">
               <input
                 className="input"
@@ -18,7 +19,7 @@ const Form = () => {
           </div>
 
           <div className="field">
-            <label className="label">Prénom</label>
+            <label className="label"><FormattedMessage id="contact.firstname" /></label>
             <div className="control">
               <input
                 className="input"
@@ -29,7 +30,7 @@ const Form = () => {
           </div>
 
           <div className="field">
-            <label className="label">Email</label>
+            <label className="label"><FormattedMessage id="contact.mail" /></label>
             <div className="control">
               <input
                 className="input"
@@ -40,7 +41,7 @@ const Form = () => {
           </div>
 
           <div className="field">
-            <label className="label">Sujet</label>
+            <label className="label"><FormattedMessage id="contact.subject" /></label>
             <div className="control">
               <div className="select">
                 <select>
@@ -52,7 +53,7 @@ const Form = () => {
           </div>
 
           <div className="field">
-            <label className="label">Message</label>
+            <label className="label"><FormattedMessage id="contact.message" /></label>
             <div className="control">
               <textarea
                 className="textarea"
@@ -74,18 +75,18 @@ const Form = () => {
             <div className="control">
               <label className="radio">
                 <input type="radio" name="question"></input>
-                Oui
+                <FormattedMessage id="contact.yes" />
               </label>
               <label className="radio">
                 <input type="radio" name="question"></input>
-                Non
+                <FormattedMessage id="contact.no" />
               </label>
             </div>
           </div>
 
           <div className="field is-grouped">
             <div className="control">
-              <button className="button is-link">Envoyer</button>
+              <button className="button is-link"><FormattedMessage id="contact.button" /></button>
             </div>
           </div>
         </div>

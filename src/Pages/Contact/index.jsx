@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from '../../components/Form'
+import { FormattedMessage } from 'react-intl';
 
 // Documentation.jsx
 const Contact = () => {
@@ -10,10 +11,10 @@ const Contact = () => {
   <div class="hero-body">
     <div class="container">
       <h1 class="title">   
-      Contactez-nous !
+      <FormattedMessage id="contact.title" />
       </h1>
       <h2 class="subtitle">
-        Remplissez ce formulaire nous vous répondrons le plus vite possible !
+      <FormattedMessage id="contact.subtitle" />
       </h2>
     </div>
   </div>

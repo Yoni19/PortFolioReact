@@ -8,6 +8,7 @@ import {
     Switch,
     Link
   } from "react-router-dom";
+  import { FormattedMessage } from 'react-intl';
 
 const NavWorks = () => {
   return (
@@ -17,10 +18,10 @@ const NavWorks = () => {
       <Link to="/works/Exercices">Exercices</Link>
       </li>
       <li>
-      <Link to="/works/Case_study">Étude de cas</Link>
+      <Link to="/works/Case_study"><FormattedMessage id="works.study"/></Link>
       </li>
       <li>
-      <Link to="/works/Projets_concrets">Projets concrets</Link>
+      <Link to="/works/Projets_concrets"><FormattedMessage id="works.project"/></Link>
       </li>
     </ul>
   </nav>
