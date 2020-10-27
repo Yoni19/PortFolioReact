@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "sass/mystyles.scss",
-  "homepage": "https://yoni19.github.io/PortFolioReact/",
+  "homepage": "https://yoni19.github.io/PortFolioReact",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
@@ -16,15 +16,16 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
     "css-watch": "npm run css-build -- --watch",
-    "starting": "npm run css-watch",
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d build"
+    "starting": "npm run css-watch"
+   
   },
   "eslintConfig": {
     "extends": [
